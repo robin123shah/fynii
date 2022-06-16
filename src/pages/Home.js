@@ -6,7 +6,7 @@ export default function Home() {
 
 
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/">
           <img
             class="brand-img"
             src="../assets/img/fynii.png"
@@ -20,7 +20,7 @@ export default function Home() {
           class="navbar-toggler"
           type="button"
           data-toggle="collapse"
-          data-target="#navbarSupportedContent"
+          data-target="/navbarSupportedContent"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
@@ -114,8 +114,8 @@ export default function Home() {
               <svg
                 width="20"
                 height="20"
-                fill="#2992dc"
-                stroke="#2992dc"
+                fill="/2992dc"
+                stroke="/2992dc"
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
@@ -161,48 +161,48 @@ export default function Home() {
 
     <section class="filter">
       <ul class="main-navigation">
-        <li><a href="#">Software Development</a></li>
-        <li><a href="#">Mathematics</a></li>
-        <li><a href="#">Management</a></li>
-        <li><a href="#">Business</a></li>
-        <li><a href="#">Startup</a></li>
+        <li><a href="/">Software Development</a></li>
+        <li><a href="/">Mathematics</a></li>
+        <li><a href="/">Management</a></li>
+        <li><a href="/">Business</a></li>
+        <li><a href="/">Startup</a></li>
         <li>
-          <a href="#">Web Development</a>
+          <a href="/">Web Development</a>
           <ul>
-            <li><a href="#">HTML 5</a></li>
+            <li><a href="/">HTML 5</a></li>
             <li>
-              <a href="#">CSS 3</a>
+              <a href="/">CSS 3</a>
               <ul>
-                <li><a href="#">Resets</a></li>
-                <li><a href="#">Grids</a></li>
-                <li><a href="#">Frameworks</a></li>
+                <li><a href="/">Resets</a></li>
+                <li><a href="/">Grids</a></li>
+                <li><a href="/">Frameworks</a></li>
               </ul>
             </li>
             <li>
-              <a href="#">JavaScript ES-6</a>
+              <a href="/">JavaScript ES-6</a>
               <ul>
-                <li><a href="#">Ajax</a></li>
-                <li><a href="#">jQuery</a></li>
+                <li><a href="/">Ajax</a></li>
+                <li><a href="/">jQuery</a></li>
               </ul>
             </li>
           </ul>
         </li>
         <li>
-          <a href="#">WordPress</a>
+          <a href="/">WordPress</a>
           <ul>
-            <li><a href="#">Themes</a></li>
-            <li><a href="#">Plugins</a></li>
+            <li><a href="/">Themes</a></li>
+            <li><a href="/">Plugins</a></li>
             <li>
-              <a href="#">Custom Post Types</a>
+              <a href="/">Custom Post Types</a>
               <ul>
-                <li><a href="#">Portfolios</a></li>
-                <li><a href="#">Testimonials</a></li>
+                <li><a href="/">Portfolios</a></li>
+                <li><a href="/">Testimonials</a></li>
               </ul>
             </li>
-            <li><a href="#">Electrical</a></li>
+            <li><a href="/">Electrical</a></li>
           </ul>
         </li>
-        <li><a href="#">Data Science</a></li>
+        <li><a href="/">Data Science</a></li>
       </ul>
     </section>
 
@@ -306,7 +306,7 @@ export default function Home() {
 
         <div class="roww scrolbar">
           <div class="row__inner">
-            <a href="">
+            <a href="/">
               <div class="tile">
                 <div class="tile__media">
                   <img
@@ -325,7 +325,7 @@ export default function Home() {
               </div>
             </a>
 
-            <a href="">
+            <a href="/">
               <div class="tile">
                 <a
                   href="https://www.geeksforgeeks.org/articles-on-computer-science-subjects-gq/"
@@ -348,7 +348,7 @@ export default function Home() {
               </div>
             </a>
 
-            <a href="">
+            <a href="/">
               <div class="tile">
                 <div class="tile__media">
                   <img
@@ -367,7 +367,7 @@ export default function Home() {
               </div>
             </a>
 
-            <a href="">
+            <a href="/">
               <div class="tile">
                 <div class="tile__media">
                   <img
@@ -726,7 +726,7 @@ export default function Home() {
                   </li>
 
                   <li>
-                    <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                    <a href="/"><i class="fab fa-twitter fa-2x"></i></a>
                   </li>
                 </ul>
               </div>
@@ -741,7 +741,7 @@ export default function Home() {
           <li><a href="contactus.html">Help-Center</a></li> --> */}
         </ul>
         {/* <!--foote_bottom_ul_amrc ends here--> */}
-        <p class="text-center">Copyright @2022 | <a href="#"> Fynii</a></p>
+        <p class="text-center">Copyright @2022 | <a href="/"> Fynii</a></p>
 
         {/* <!-- 
         <ul class="social_footer_ul text-center">
