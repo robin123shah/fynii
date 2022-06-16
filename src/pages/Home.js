@@ -68,7 +68,7 @@ export default function Home() {
           </button>
 
           <button type="button" class="btn">
-            <a href="Signup.js">Sign-Up</a>
+            <a href="Signup">Sign-Up</a>
           </button>
         </div>
       </nav>

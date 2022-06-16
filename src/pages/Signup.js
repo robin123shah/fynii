@@ -1,6 +1,18 @@
 import React from 'react'
+import { useState } from 'react'
 
 export default function Signup() {
+    const [prefix,setprefix] = useState("")
+    const [firstname,setfirstname] = useState("")
+    const [lastname,setlastname] = useState("")
+    const [email,setemail] = useState("")
+    const [Number,setnumber] = useState("")
+    const [password,setpassword] = useState("")
+    const [password2,setpassword2] = useState("")
+
+    const onSignUPpress=() => {
+        console.log(prefix,firstname,lastname,email,Number,password,password2);
+    }
   return (
     <React.Fragment>
             <div class="container" style={{"margin-top": "1em"}}>
@@ -21,8 +33,8 @@ export default function Signup() {
             <div class="row">
               <div class="form-group col-md-2">
                 <select id="input_sex" class="form-control">
-                  <option value="Mr.">Mr.</option>
-                  <option value="Ms.">Ms.</option>
+                  <option onChange={e => setprefix(e.target.value)} value="Mr.">Mr.</option>
+                  <option onChange={e => setprefix(e.target.value)} value="Ms.">Ms.</option>
                 </select>
               </div>
               <div class="form-group col-md-5">
@@ -30,6 +42,7 @@ export default function Signup() {
                   id="first_name"
                   type="text"
                   class="form-control"
+                  onChange={e=>setfirstname(e.target.value)}
                   placeholder="First name"
                 />
                 <div id="first_name_feedback" class="invalid-feedback"></div>
@@ -39,6 +52,7 @@ export default function Signup() {
                   id="last_name"
                   type="text"
                   class="form-control"
+                  onChange={e=>setlastname(e.target.value)}
                   placeholder="Last name"
                 />
                 <div id="last_name_feedback" class="invalid-feedback"></div>
@@ -57,6 +71,7 @@ export default function Signup() {
                   <input
                     type="email"
                     class="form-control"
+                    onChange={e=>setemail(e.target.value)}
                     id="email"
                     placeholder="example@gmail.com"
                     required
@@ -69,6 +84,7 @@ export default function Signup() {
                     type="text"
                     class="form-control"
                     id="tel"
+                    onChange={e=>setnumber(e.target.value)}
                     placeholder="+91 69999 99999"
                     required
                   />
@@ -80,6 +96,7 @@ export default function Signup() {
                   <label for="password" class="col-form-label">Password</label>
                   <input
                     type="password"
+                    onChange={e=>setpassword(e.target.value)}
                     class="form-control"
                     id="password"
                     placeholder="Type your password"
@@ -95,6 +112,7 @@ export default function Signup() {
                     type="password"
                     class="form-control"
                     id="password_conf"
+                    onChange={e=>setpassword2(e.target.value)}
                     placeholder="Type your password again"
                     required
                   />
@@ -161,7 +179,7 @@ export default function Signup() {
           </div>
         </div>
         <div style={{"margin-top": "1em"}}>
-          <button type="button" class="btn btn-primary btn-lg btn-block">
+          <button type="button" onClick={onSignUPpress} class="btn btn-primary btn-lg btn-block">
             Sign up !
           </button>
         </div>
